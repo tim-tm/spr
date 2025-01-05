@@ -2,9 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define ALPHABET_LEN 26
 #define MAX_MSG_LEN 512
-#define MAX_KEY_LEN 512
 
 static int fail_usage(void) {
     printf("Usage:\n\tEncryption: caesar -e <message> <key>\n\tDecryption: caesar -d <cipher> <key>\n");
