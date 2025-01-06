@@ -15,3 +15,5 @@ SELECT * FROM Customers WHERE City LIKE 'Be__in';
 SELECT * FROM Customers WHERE City LIKE 'Be__%';
 
 SELECT * FROM Customers WHERE City IN ('Berlin', 'Paris', 'Madrid', 'Bern') ORDER BY City;
+
+SELECT *, (strftime('%Y', 'now') - strftime('%Y', OrderDate)) AS YearsSinceOrder FROM Orders;
